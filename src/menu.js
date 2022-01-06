@@ -1,81 +1,9 @@
 /// <reference path="../GTA San Andreas - Definitive Edition/Gameface/Binaries/Win64/CLEO/.config/sa.d.ts" />
 
 /*
-	Scripted by Yushae Raza
-	Free to use/redistribute but mention me in the credits.
-	
-	Only tested in 14388 build.
-	
-	Usage:
-		press f4 to access the  trainer menu
-		press f3 to access the vehicle spawner
-		press up/down arrow key to cycle through each option
-		press enter to select 
+
+
 */
-
-
-const Trainer_Key = 115;
-const Spawner_Key=114;
-const Shortcut_key=17;
-const VK_UP=38;
-const VK_DOWN=40;
-
-
-
-
-
-
-var world_cheats_var={
-	lockdown:false,
-	riot:false,
-	menu_state:0
-
-}
-
-var vehicle_submenu={
-	mainmenu:0,
-	primaryColour:1,
-	secondaryColour:2,
-	vehiclemods:{
-		catagory:3,
-		selection:4
-	}
-}
-
-var player = new Player(0);
-var index = 0;
-var current_vehicle = false;
-var spawner_active=false;
-var state=0;
-var selected_car;
-var player_cheats_var={
-	enable_god:false,
-	never_wanted:false,
-	menu_state:0,
-	weapon_catagory:null,
-	infinite_sprint:false,
-	super_jump:false,
-	glide:false
-	
-
-};
-var vehicle_cheat_var={
-	state:0,
-	god:false,
-	mod_catagory:null
-}
-
-
-
-
-var trainer_active=false;
-var spawner_state=0;
-var teleporter={
-	state:0,
-	catagory_idx:-1
-}
-const K_UP=38;
-const K_DOWN=40;
 
 class Menu{
     
