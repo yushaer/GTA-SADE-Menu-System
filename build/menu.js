@@ -572,7 +572,10 @@ var Menu = /*#__PURE__*/function () {
         if (_classPrivateFieldLooseBase(this, _selected_index)[_selected_index] >= _classPrivateFieldLooseBase(this, _options)[_options].length) {
           _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = 0;
           _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = 0;
-          _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
+
+          if (_classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe]) {
+            _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
+          }
         } //this.update();
 
       }
@@ -596,8 +599,11 @@ var Menu = /*#__PURE__*/function () {
 
         if (_classPrivateFieldLooseBase(this, _selected_index)[_selected_index] < 0) {
           _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = _classPrivateFieldLooseBase(this, _options)[_options].length - 1;
-          _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = _classPrivateFieldLooseBase(this, _options)[_options].length - _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
-          _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _options)[_options].length;
+
+          if (this.scrollabe) {
+            _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = _classPrivateFieldLooseBase(this, _options)[_options].length - _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
+            _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _options)[_options].length;
+          }
         } //this.update();
 
       }
@@ -631,4 +637,5 @@ var Menu = /*#__PURE__*/function () {
   }]);
 
   return Menu;
-}();
+}(); //testing code 
+

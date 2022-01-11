@@ -366,7 +366,10 @@ class Menu{
 			if(this.#selected_index>=this.#options.length){
 				this.#selected_index=0;
 				this.#start_idx=0;
-				this.#scroll=this.#max_items_in_view;
+				if(this.#scrollabe){
+					this.#scroll=this.#max_items_in_view;
+				}
+				
 			}
 			//this.update();
 		}
@@ -394,8 +397,11 @@ class Menu{
 			this.#selected_index-=1;
 			if(this.#selected_index<0){
 				this.#selected_index=this.#options.length-1;
-				this.#start_idx=(this.#options.length)-this.#max_items_in_view;
-				this.#scroll=this.#options.length;
+				if(this.scrollabe){
+					this.#start_idx=(this.#options.length)-this.#max_items_in_view;
+					this.#scroll=this.#options.length;
+				}
+				
 			}
 			//this.update();
 		}
