@@ -6,7 +6,63 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _classPrivateFieldLooseBase(receiver, privateKey) { if (!Object.prototype.hasOwnProperty.call(receiver, privateKey)) { throw new TypeError("attempted to use private field on non-instance"); } return receiver; }
+
+var id = 0;
+
+function _classPrivateFieldLooseKey(name) { return "__private_" + id++ + "_" + name; }
+
+var _name = /*#__PURE__*/_classPrivateFieldLooseKey("name");
+
+var _options = /*#__PURE__*/_classPrivateFieldLooseKey("options");
+
+var _width = /*#__PURE__*/_classPrivateFieldLooseKey("width");
+
+var _height = /*#__PURE__*/_classPrivateFieldLooseKey("height");
+
+var _max_items_in_view = /*#__PURE__*/_classPrivateFieldLooseKey("max_items_in_view");
+
+var _posx = /*#__PURE__*/_classPrivateFieldLooseKey("posx");
+
+var _posy = /*#__PURE__*/_classPrivateFieldLooseKey("posy");
+
+var _menucolor = /*#__PURE__*/_classPrivateFieldLooseKey("menucolor");
+
+var _textcolor = /*#__PURE__*/_classPrivateFieldLooseKey("textcolor");
+
+var _selected_index = /*#__PURE__*/_classPrivateFieldLooseKey("selected_index");
+
+var _heightoffset = /*#__PURE__*/_classPrivateFieldLooseKey("heightoffset");
+
+var _titlefont = /*#__PURE__*/_classPrivateFieldLooseKey("titlefont");
+
+var _highlight_color = /*#__PURE__*/_classPrivateFieldLooseKey("highlight_color");
+
+var _title_font_scale = /*#__PURE__*/_classPrivateFieldLooseKey("title_font_scale");
+
+var _active = /*#__PURE__*/_classPrivateFieldLooseKey("active");
+
+var _option_width = /*#__PURE__*/_classPrivateFieldLooseKey("option_width");
+
+var _outline_height = /*#__PURE__*/_classPrivateFieldLooseKey("outline_height");
+
+var _outlinecolor = /*#__PURE__*/_classPrivateFieldLooseKey("outlinecolor");
+
+var _optionfont = /*#__PURE__*/_classPrivateFieldLooseKey("optionfont");
+
+var _optionfontscale = /*#__PURE__*/_classPrivateFieldLooseKey("optionfontscale");
+
+var _option_background_color = /*#__PURE__*/_classPrivateFieldLooseKey("option_background_color");
+
+var _scroll = /*#__PURE__*/_classPrivateFieldLooseKey("scroll");
+
+var _start_idx = /*#__PURE__*/_classPrivateFieldLooseKey("start_idx");
+
+var _scrollabe = /*#__PURE__*/_classPrivateFieldLooseKey("scrollabe");
+
+var _option_posx = /*#__PURE__*/_classPrivateFieldLooseKey("option_posx");
+
+var _controls = /*#__PURE__*/_classPrivateFieldLooseKey("controls");
 
 /// <reference path="../GTA San Andreas - Definitive Edition/Gameface/Binaries/Win64/CLEO/.config/sa.d.ts" />
 
@@ -34,108 +90,160 @@ var Menu = /*#__PURE__*/function () {
   function Menu(name, options, width, posx, posy, menucolor) {
     _classCallCheck(this, Menu);
 
-    _defineProperty(this, "name", void 0);
-
-    _defineProperty(this, "options", void 0);
-
-    _defineProperty(this, "width", void 0);
-
-    _defineProperty(this, "height", void 0);
-
-    _defineProperty(this, "max_items_in_view", void 0);
-
-    _defineProperty(this, "posx", void 0);
-
-    _defineProperty(this, "posy", void 0);
-
-    _defineProperty(this, "menucolor", void 0);
-
-    _defineProperty(this, "textcolor", void 0);
-
-    _defineProperty(this, "selected_index", void 0);
-
-    _defineProperty(this, "heightoffset", void 0);
-
-    _defineProperty(this, "titlefont", void 0);
-
-    _defineProperty(this, "highlight_color", void 0);
-
-    _defineProperty(this, "title_font_scale", void 0);
-
-    _defineProperty(this, "active", void 0);
-
-    _defineProperty(this, "option_width", void 0);
-
-    _defineProperty(this, "outline_height", void 0);
-
-    _defineProperty(this, "outlinecolor", void 0);
-
-    _defineProperty(this, "optionfont", void 0);
-
-    _defineProperty(this, "optionfontscale", void 0);
-
-    _defineProperty(this, "option_background_color", void 0);
-
-    _defineProperty(this, "scroll", void 0);
-
-    _defineProperty(this, "start_idx", void 0);
-
-    _defineProperty(this, "scrollabe", void 0);
-
-    _defineProperty(this, "option_posx", void 0);
-
-    _defineProperty(this, "controls", void 0);
-
-    this.name = name;
-    this.options = options;
-    this.width = width;
-    this.max_items_in_view = 8;
+    Object.defineProperty(this, _name, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _options, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _width, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _height, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _max_items_in_view, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _posx, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _posy, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _menucolor, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _textcolor, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _selected_index, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _heightoffset, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _titlefont, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _highlight_color, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _title_font_scale, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _active, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _option_width, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _outline_height, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _outlinecolor, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _optionfont, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _optionfontscale, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _option_background_color, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _scroll, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _start_idx, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _scrollabe, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _option_posx, {
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, _controls, {
+      writable: true,
+      value: void 0
+    });
+    _classPrivateFieldLooseBase(this, _name)[_name] = name;
+    _classPrivateFieldLooseBase(this, _options)[_options] = options;
+    _classPrivateFieldLooseBase(this, _width)[_width] = width;
+    _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view] = 8;
     this.calculate_height();
-    this.controls = {
+    _classPrivateFieldLooseBase(this, _controls)[_controls] = {
       "up": 38,
       "down": 40
     };
-    this.posx = posx;
-    this.posy = posy;
-    this.menucolor = menucolor;
-    this.textcolor = [255, 255, 255, 255];
-    this.selected_index = 0;
-    this.heightoffset = 30;
-    this.titlefont = 0;
-    this.title_font_scale = 1;
-    this.active = false;
-    this.outlinecolor = [255, 255, 255, 255];
-    this.highlight_color = [110, 239, 51, 1 * 255];
-    this.outline_height = 2;
-    this.scroll = 0;
-    this.start_idx = 0;
-    this.optionfont = 1;
-    this.optionfontscale = 0.95 * this.title_font_scale;
-    this.scrollabe = false;
-    this.option_width = this.width * 0.95;
-    this.option_posx = this.posx + Math.round(this.width / 2 - this.option_width / 2, 0);
-    this.option_background_color = [menucolor[0], menucolor[1], menucolor[2], Math.round(1.05 * menucolor[3])];
+    _classPrivateFieldLooseBase(this, _posx)[_posx] = posx;
+    _classPrivateFieldLooseBase(this, _posy)[_posy] = posy;
+    _classPrivateFieldLooseBase(this, _menucolor)[_menucolor] = menucolor;
+    _classPrivateFieldLooseBase(this, _textcolor)[_textcolor] = [255, 255, 255, 255];
+    _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = 0;
+    _classPrivateFieldLooseBase(this, _heightoffset)[_heightoffset] = 30;
+    _classPrivateFieldLooseBase(this, _titlefont)[_titlefont] = 0;
+    _classPrivateFieldLooseBase(this, _title_font_scale)[_title_font_scale] = 1;
+    _classPrivateFieldLooseBase(this, _active)[_active] = false;
+    _classPrivateFieldLooseBase(this, _outlinecolor)[_outlinecolor] = [255, 255, 255, 255];
+    _classPrivateFieldLooseBase(this, _highlight_color)[_highlight_color] = [110, 239, 51, 1 * 255];
+    _classPrivateFieldLooseBase(this, _outline_height)[_outline_height] = 2;
+    _classPrivateFieldLooseBase(this, _scroll)[_scroll] = 0;
+    _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = 0;
+    _classPrivateFieldLooseBase(this, _optionfont)[_optionfont] = 1;
+    _classPrivateFieldLooseBase(this, _optionfontscale)[_optionfontscale] = 0.95 * _classPrivateFieldLooseBase(this, _title_font_scale)[_title_font_scale];
+    _classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe] = false;
+    _classPrivateFieldLooseBase(this, _option_width)[_option_width] = _classPrivateFieldLooseBase(this, _width)[_width] * 0.95;
+    _classPrivateFieldLooseBase(this, _option_posx)[_option_posx] = _classPrivateFieldLooseBase(this, _posx)[_posx] + Math.round(_classPrivateFieldLooseBase(this, _width)[_width] / 2 - _classPrivateFieldLooseBase(this, _option_width)[_option_width] / 2, 0);
+    _classPrivateFieldLooseBase(this, _option_background_color)[_option_background_color] = [menucolor[0], menucolor[1], menucolor[2], Math.round(1.05 * menucolor[3])];
     this.generate_scroll();
   }
 
   _createClass(Menu, [{
     key: "generate_scroll",
     value: function generate_scroll() {
-      if (this.options.length > this.max_items_in_view) {
-        this.scrollabe = true;
-        this.scroll = this.max_items_in_view;
+      if (_classPrivateFieldLooseBase(this, _options)[_options].length > _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view]) {
+        _classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe] = true;
+        _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
       } else {
-        this.scroll = this.options.length;
-        this.scrollabe = false;
+        _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _options)[_options].length;
+        _classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe] = false;
       }
     }
   }, {
     key: "calculate_height",
     value: function calculate_height() {
-      if (this.options.length <= this.max_items_in_view) {
-        this.height = this.options.length * 30 + 30 + 10;
+      if (_classPrivateFieldLooseBase(this, _options)[_options].length <= _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view]) {
+        _classPrivateFieldLooseBase(this, _height)[_height] = _classPrivateFieldLooseBase(this, _options)[_options].length * 30 + 30 + 10;
       } else {
-        this.height = this.max_items_in_view * 30 + 30 + 10;
+        _classPrivateFieldLooseBase(this, _height)[_height] = _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view] * 30 + 30 + 10;
       }
     }
     /**
@@ -146,7 +254,8 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "addOption",
     value: function addOption(option) {
-      this.options.push(option);
+      _classPrivateFieldLooseBase(this, _options)[_options].push(option);
+
       this.calculate_height();
       this.generate_scroll();
     } //setters
@@ -159,8 +268,8 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setWidth",
     value: function setWidth(value) {
-      this.width = value;
-      this.option_width = this.width * 0.95;
+      _classPrivateFieldLooseBase(this, _width)[_width] = value;
+      _classPrivateFieldLooseBase(this, _option_width)[_option_width] = _classPrivateFieldLooseBase(this, _width)[_width] * 0.95;
     }
     /**
      * Sets the menu height
@@ -180,8 +289,8 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setPosX",
     value: function setPosX(value) {
-      this.posx = value;
-      this.option_posx = this.posx + Math.round(this.width / 2 - this.option_width / 2, 0);
+      _classPrivateFieldLooseBase(this, _posx)[_posx] = value;
+      _classPrivateFieldLooseBase(this, _option_posx)[_option_posx] = _classPrivateFieldLooseBase(this, _posx)[_posx] + Math.round(_classPrivateFieldLooseBase(this, _width)[_width] / 2 - _classPrivateFieldLooseBase(this, _option_width)[_option_width] / 2, 0);
     }
     /**
      * sets the y position of the menu 
@@ -191,7 +300,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setPosY",
     value: function setPosY(value) {
-      this.posy = value;
+      _classPrivateFieldLooseBase(this, _posy)[_posy] = value;
     }
     /**
      * Sets the  menu option width 
@@ -201,8 +310,8 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setOptionWidth",
     value: function setOptionWidth(width) {
-      this.option_width = width;
-      this.option_posx = this.posx + Math.round(this.width / 2 - this.option_width / 2, 0);
+      _classPrivateFieldLooseBase(this, _option_width)[_option_width] = width;
+      _classPrivateFieldLooseBase(this, _option_posx)[_option_posx] = _classPrivateFieldLooseBase(this, _posx)[_posx] + Math.round(_classPrivateFieldLooseBase(this, _width)[_width] / 2 - _classPrivateFieldLooseBase(this, _option_width)[_option_width] / 2, 0);
     }
     /**
      * sets whether the menu is active or disabled
@@ -212,9 +321,9 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setActive",
     value: function setActive(active) {
-      this.active = active;
-      this.selected_index = 0;
-      this.start_idx = 0;
+      _classPrivateFieldLooseBase(this, _active)[_active] = active;
+      _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = 0;
+      _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = 0;
       this.generate_scroll();
     }
     /**
@@ -225,7 +334,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setName",
     value: function setName(value) {
-      this.name = value;
+      _classPrivateFieldLooseBase(this, _name)[_name] = value;
     }
     /**
      * sets the menu background color
@@ -235,7 +344,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setMenuColor",
     value: function setMenuColor(value) {
-      this.menucolor = value;
+      _classPrivateFieldLooseBase(this, _menucolor)[_menucolor] = value;
     }
     /**
      * sets the text color of the menu
@@ -245,7 +354,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setTextColor",
     value: function setTextColor(value) {
-      this.textcolor = value;
+      _classPrivateFieldLooseBase(this, _textcolor)[_textcolor] = value;
     }
     /**
      * Sets the font for the menu title
@@ -255,7 +364,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setTitleFont",
     value: function setTitleFont(value) {
-      this.titlefont = value;
+      _classPrivateFieldLooseBase(this, _titlefont)[_titlefont] = value;
     }
     /**
      * Sets the scale of the menu title font 
@@ -265,128 +374,128 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "setTitleFontScale",
     value: function setTitleFontScale(value) {
-      this.title_font_scale = value;
+      _classPrivateFieldLooseBase(this, _title_font_scale)[_title_font_scale] = value;
     }
   }, {
     key: "setHighlightColor",
     value: function setHighlightColor(value) {
-      this.highlight_color = value;
+      _classPrivateFieldLooseBase(this, _highlight_color)[_highlight_color] = value;
     }
   }, {
     key: "setOutlineHeight",
     value: function setOutlineHeight(value) {
-      this.outline_height = value;
+      _classPrivateFieldLooseBase(this, _outline_height)[_outline_height] = value;
     }
   }, {
     key: "setOutlineColor",
     value: function setOutlineColor(value) {
-      this.outlinecolor = value;
+      _classPrivateFieldLooseBase(this, _outlinecolor)[_outlinecolor] = value;
     }
   }, {
     key: "setOptionFont",
     value: function setOptionFont(value) {
-      this.optionfont = value;
+      _classPrivateFieldLooseBase(this, _optionfont)[_optionfont] = value;
     }
   }, {
     key: "setOptionFontScale",
     value: function setOptionFontScale(value) {
-      this.optionfontscale = value;
+      _classPrivateFieldLooseBase(this, _optionfontscale)[_optionfontscale] = value;
     }
   }, {
     key: "setOptionBackgroundColor",
     value: function setOptionBackgroundColor(value) {
-      this.option_background_color = value;
+      _classPrivateFieldLooseBase(this, _option_background_color)[_option_background_color] = value;
     }
   }, {
     key: "setSelectedIndex",
     value: function setSelectedIndex(value) {
-      this.selected_index = value;
+      _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = value;
     } //getters
 
   }, {
     key: "getSelectedIndex",
     value: function getSelectedIndex() {
-      return this.selected_index;
+      return _classPrivateFieldLooseBase(this, _selected_index)[_selected_index];
     }
   }, {
     key: "getName",
     value: function getName() {
-      return this.name;
+      return _classPrivateFieldLooseBase(this, _name)[_name];
     }
   }, {
     key: "getMenuColor",
     value: function getMenuColor() {
-      return this.menucolor;
+      return _classPrivateFieldLooseBase(this, _menucolor)[_menucolor];
     }
   }, {
     key: "getTextColor",
     value: function getTextColor() {
-      return this.textcolor;
+      return _classPrivateFieldLooseBase(this, _textcolor)[_textcolor];
     }
   }, {
     key: "isActive",
     value: function isActive() {
-      return this.active;
+      return _classPrivateFieldLooseBase(this, _active)[_active];
     }
   }, {
     key: "getTitleFont",
     value: function getTitleFont() {
-      return this.titlefont;
+      return _classPrivateFieldLooseBase(this, _titlefont)[_titlefont];
     }
   }, {
     key: "getHighlightColor",
     value: function getHighlightColor() {
-      return this.highlight_color;
+      return _classPrivateFieldLooseBase(this, _highlight_color)[_highlight_color];
     }
   }, {
     key: "getTitleFontScale",
     value: function getTitleFontScale() {
-      return this.title_font_scale;
+      return _classPrivateFieldLooseBase(this, _title_font_scale)[_title_font_scale];
     }
   }, {
     key: "getOutlineHeight",
     value: function getOutlineHeight() {
-      return this.outline_height;
+      return _classPrivateFieldLooseBase(this, _outline_height)[_outline_height];
     }
   }, {
     key: "getOutlineColor",
     value: function getOutlineColor() {
-      return this.outlinecolor;
+      return _classPrivateFieldLooseBase(this, _outlinecolor)[_outlinecolor];
     }
   }, {
     key: "getOptionFont",
     value: function getOptionFont() {
-      return this.optionfont;
+      return _classPrivateFieldLooseBase(this, _optionfont)[_optionfont];
     }
   }, {
     key: "getOptionFontScale",
     value: function getOptionFontScale() {
-      return this.optionfontscale;
+      return _classPrivateFieldLooseBase(this, _optionfontscale)[_optionfontscale];
     }
   }, {
     key: "getOptionBackgroundColor",
     value: function getOptionBackgroundColor() {
-      return this.option_background_color;
+      return _classPrivateFieldLooseBase(this, _option_background_color)[_option_background_color];
     }
   }, {
     key: "getWidth",
     value: function getWidth() {
-      return this.width;
+      return _classPrivateFieldLooseBase(this, _width)[_width];
     }
   }, {
     key: "getHeight",
     value: function getHeight() {
-      return this.height;
+      return _classPrivateFieldLooseBase(this, _height)[_height];
     }
   }, {
     key: "getPosX",
     value: function getPosX() {
-      return this.posx;
+      return _classPrivateFieldLooseBase(this, _posx)[_posx];
     }
   }, {
     key: "getPosY",
     value: function getPosY() {
-      return this.posy;
+      return _classPrivateFieldLooseBase(this, _posy)[_posy];
     }
     /**
      * Clears all the options from the menu
@@ -395,32 +504,35 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "clear",
     value: function clear() {
-      this.options = [];
-      this.selected_index = 0;
-      this.start_idx = 0;
+      _classPrivateFieldLooseBase(this, _options)[_options] = [];
+      _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = 0;
+      _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = 0;
       this.generate_scroll();
     }
   }, {
     key: "update",
     value: function update() {
       Text.UseCommands(false);
-      this.drawRect(this.posx, this.posy, this.width, this.height, this.menucolor);
-      var offset = this.heightoffset; //this.createRectangle(-110, 0, 200, 30, 0, 0, 0, 105);
+      this.drawRect(_classPrivateFieldLooseBase(this, _posx)[_posx], _classPrivateFieldLooseBase(this, _posy)[_posy], _classPrivateFieldLooseBase(this, _width)[_width], _classPrivateFieldLooseBase(this, _height)[_height], _classPrivateFieldLooseBase(this, _menucolor)[_menucolor]);
 
-      this.drawText(this.name, this.posx + 100, this.posy + 5, this.titlefont, this.title_font_scale, true, this.textcolor, true);
+      var offset = _classPrivateFieldLooseBase(this, _heightoffset)[_heightoffset]; //this.createRectangle(-110, 0, 200, 30, 0, 0, 0, 105);
 
-      if (this.options.length >= 1) {
-        for (var i = this.start_idx; i < this.scroll; i++) {
-          var option = this.options[i];
-          this.drawRect(this.option_posx, offset, this.option_width, this.outline_height, this.outlinecolor);
 
-          if (i == this.selected_index) {
-            this.drawRect(this.option_posx, offset + 2, this.option_width, 30, this.highlight_color);
+      this.drawText(_classPrivateFieldLooseBase(this, _name)[_name], _classPrivateFieldLooseBase(this, _posx)[_posx] + 100, _classPrivateFieldLooseBase(this, _posy)[_posy] + 5, _classPrivateFieldLooseBase(this, _titlefont)[_titlefont], _classPrivateFieldLooseBase(this, _title_font_scale)[_title_font_scale], true, _classPrivateFieldLooseBase(this, _textcolor)[_textcolor], true);
+
+      if (_classPrivateFieldLooseBase(this, _options)[_options].length >= 1) {
+        for (var i = _classPrivateFieldLooseBase(this, _start_idx)[_start_idx]; i < _classPrivateFieldLooseBase(this, _scroll)[_scroll]; i++) {
+          var option = _classPrivateFieldLooseBase(this, _options)[_options][i];
+
+          this.drawRect(_classPrivateFieldLooseBase(this, _option_posx)[_option_posx], offset, _classPrivateFieldLooseBase(this, _option_width)[_option_width], _classPrivateFieldLooseBase(this, _outline_height)[_outline_height], _classPrivateFieldLooseBase(this, _outlinecolor)[_outlinecolor]);
+
+          if (i == _classPrivateFieldLooseBase(this, _selected_index)[_selected_index]) {
+            this.drawRect(_classPrivateFieldLooseBase(this, _option_posx)[_option_posx], offset + 2, _classPrivateFieldLooseBase(this, _option_width)[_option_width], 30, _classPrivateFieldLooseBase(this, _highlight_color)[_highlight_color]);
           } else {
-            this.drawRect(this.option_posx, offset + 2, this.option_width, 30, this.option_background_color);
+            this.drawRect(_classPrivateFieldLooseBase(this, _option_posx)[_option_posx], offset + 2, _classPrivateFieldLooseBase(this, _option_width)[_option_width], 30, _classPrivateFieldLooseBase(this, _option_background_color)[_option_background_color]);
           }
 
-          this.drawText(option, this.option_posx + 10, offset + 5 + this.outline_height, this.optionfont, this.optionfontscale, true, this.textcolor, false);
+          this.drawText(option, _classPrivateFieldLooseBase(this, _option_posx)[_option_posx] + 10, offset + 5 + _classPrivateFieldLooseBase(this, _outline_height)[_outline_height], _classPrivateFieldLooseBase(this, _optionfont)[_optionfont], _classPrivateFieldLooseBase(this, _optionfontscale)[_optionfontscale], true, _classPrivateFieldLooseBase(this, _textcolor)[_textcolor], false);
           offset += 30;
         }
       }
@@ -428,7 +540,7 @@ var Menu = /*#__PURE__*/function () {
   }, {
     key: "check_scroll",
     value: function check_scroll() {
-      if (this.options.length > 8) {
+      if (_classPrivateFieldLooseBase(this, _options)[_options].length > 8) {
         return true;
       }
 
@@ -442,50 +554,50 @@ var Menu = /*#__PURE__*/function () {
     key: "draw",
     value: function draw() {
       //this.createRectangle(260, 408, 150, 16, 0, 0, 0, 150)
-      if (Pad.IsKeyPressed(this.controls.down)) {
-        while (Pad.IsKeyPressed(this.controls.down)) {
+      if (Pad.IsKeyPressed(_classPrivateFieldLooseBase(this, _controls)[_controls].down)) {
+        while (Pad.IsKeyPressed(_classPrivateFieldLooseBase(this, _controls)[_controls].down)) {
           this.update();
           wait(0);
         }
 
-        if (this.scrollabe) {
-          if (this.scroll < this.options.length) {
-            this.start_idx += 1;
-            this.scroll += 1;
+        if (_classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe]) {
+          if (_classPrivateFieldLooseBase(this, _scroll)[_scroll] < _classPrivateFieldLooseBase(this, _options)[_options].length) {
+            _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] += 1;
+            _classPrivateFieldLooseBase(this, _scroll)[_scroll] += 1;
           }
         }
 
-        this.selected_index += 1;
+        _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] += 1;
 
-        if (this.selected_index >= this.options.length) {
-          this.selected_index = 0;
-          this.start_idx = 0;
-          this.scroll = this.max_items_in_view;
+        if (_classPrivateFieldLooseBase(this, _selected_index)[_selected_index] >= _classPrivateFieldLooseBase(this, _options)[_options].length) {
+          _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = 0;
+          _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = 0;
+          _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
         } //this.update();
 
       }
 
-      if (Pad.IsKeyPressed(this.controls.up)) {
-        while (Pad.IsKeyPressed(this.controls.up)) {
+      if (Pad.IsKeyPressed(_classPrivateFieldLooseBase(this, _controls)[_controls].up)) {
+        while (Pad.IsKeyPressed(_classPrivateFieldLooseBase(this, _controls)[_controls].up)) {
           this.update();
           wait(0);
         }
 
-        if (this.scrollabe) {
-          if (this.scroll > 0) {
-            if (this.start_idx > 0) {
-              this.start_idx -= 1;
-              this.scroll -= 1;
+        if (_classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe]) {
+          if (_classPrivateFieldLooseBase(this, _scroll)[_scroll] > 0) {
+            if (_classPrivateFieldLooseBase(this, _start_idx)[_start_idx] > 0) {
+              _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] -= 1;
+              _classPrivateFieldLooseBase(this, _scroll)[_scroll] -= 1;
             }
           }
         }
 
-        this.selected_index -= 1;
+        _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] -= 1;
 
-        if (this.selected_index < 0) {
-          this.selected_index = this.options.length - 1;
-          this.start_idx = this.options.length - this.max_items_in_view;
-          this.scroll = this.options.length;
+        if (_classPrivateFieldLooseBase(this, _selected_index)[_selected_index] < 0) {
+          _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = _classPrivateFieldLooseBase(this, _options)[_options].length - 1;
+          _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = _classPrivateFieldLooseBase(this, _options)[_options].length - _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
+          _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _options)[_options].length;
         } //this.update();
 
       }
@@ -519,6 +631,4 @@ var Menu = /*#__PURE__*/function () {
   }]);
 
   return Menu;
-}(); //testing code 
-
-
+}();
