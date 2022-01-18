@@ -503,8 +503,9 @@ class Menu{
 			this.#selected_index-=1;
 			if(this.#selected_index<0){
 				this.#selected_index=this.#options.length-1;
-				if(this.scrollabe){
-					this.#start_idx=(this.#options.length)-this.#max_items_in_view;
+				if(this.#scrollabe){
+					this.#start_idx=(this.#options.length)-this.#max_items_in_view ;
+					
 					this.#scroll=this.#options.length;
 				}
 				
@@ -684,10 +685,16 @@ FxtStore.insert("gm1","Enabled");
 var menu = new Menu("trn1",[],150,-100,0,[0,0,0,150]);
 
 
-	menu.addOption(new MenuOption("gm","gm1",false));
+menu.addOption(new MenuOption("gm","gm1",false));
 menu.addOption("trn2");
 menu.addOption("trn3");
 menu.addOption(new MenuOption("trn20",[0,255,40,255],false));
+menu.addOption("trn4");
+
+menu.addOption("trn5");
+menu.addOption("trn6");
+menu.addOption("trn7");
+menu.addOption("trn8");
 FxtStore.insert("ky1","example")
 // menu.clear();
 // for(var i=0;i<cat.length;i++){
@@ -696,7 +703,7 @@ FxtStore.insert("ky1","example")
 //createRectangle(-95,100,200,200,0,0,0,1)
 //m.draw();
 var player=new Player(0);
-player.getChar().ad
+ 
 menu.setTitleFontScale(2)
 menu.setTextColor([255, 255,255,255]);
 

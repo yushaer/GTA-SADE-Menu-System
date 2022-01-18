@@ -723,7 +723,7 @@ var Menu = /*#__PURE__*/function () {
         if (_classPrivateFieldLooseBase(this, _selected_index)[_selected_index] < 0) {
           _classPrivateFieldLooseBase(this, _selected_index)[_selected_index] = _classPrivateFieldLooseBase(this, _options)[_options].length - 1;
 
-          if (this.scrollabe) {
+          if (_classPrivateFieldLooseBase(this, _scrollabe)[_scrollabe]) {
             _classPrivateFieldLooseBase(this, _start_idx)[_start_idx] = _classPrivateFieldLooseBase(this, _options)[_options].length - _classPrivateFieldLooseBase(this, _max_items_in_view)[_max_items_in_view];
             _classPrivateFieldLooseBase(this, _scroll)[_scroll] = _classPrivateFieldLooseBase(this, _options)[_options].length;
           }
@@ -1022,6 +1022,11 @@ menu.addOption(new MenuOption("gm", "gm1", false));
 menu.addOption("trn2");
 menu.addOption("trn3");
 menu.addOption(new MenuOption("trn20", [0, 255, 40, 255], false));
+menu.addOption("trn4");
+menu.addOption("trn5");
+menu.addOption("trn6");
+menu.addOption("trn7");
+menu.addOption("trn8");
 FxtStore.insert("ky1", "example"); // menu.clear();
 // for(var i=0;i<cat.length;i++){
 // 	menu.addOption(cat[i]);
@@ -1030,7 +1035,6 @@ FxtStore.insert("ky1", "example"); // menu.clear();
 //m.draw();
 
 var player = new Player(0);
-player.getChar().ad;
 menu.setTitleFontScale(2);
 menu.setTextColor([255, 255, 255, 255]); //menu.setMenuColor([0,0,0,200]);
 
