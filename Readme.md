@@ -35,7 +35,7 @@ while(true){
     }
 }
 ```
-For more detailed example see examples.
+For more detailed example see [examples](https://github.com/yushaer/GTA-SA-Menu-System/tree/main/example).
 The documentation can be viewed at [Docs](https://github.com/yushaer/GTA-SA-Menu-System/tree/main/docs)
 
 ---
