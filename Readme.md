@@ -2,7 +2,7 @@
 This is a library/plugin for [Cleo Redux](https://github.com/cleolibrary/CLEO-Redux) to create menus for script mods for the definitive editon of Grand theft Auto San Andreas. Its in early stages of development but still usable
 
 ## Setup 
-    1) Install [Cleo Redux](https://github.com/cleolibrary/CLEO-Redux)
+    1) Install [Cleo Redux](https://github.com/cleolibrary/CLEO-Redux) note that this requires cleo Redux version 0.9.0-dev.20220119 which is a development version of Cleo Redux not yet released 
     2) Place the menu_system folder inside the CLEO folder which should be located inside win64 folder of game directory
 ---
 ## Getting Started
