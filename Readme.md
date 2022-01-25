@@ -53,6 +53,10 @@ The documentation can be viewed at [Docs](https://github.com/yushaer/GTA-SA-Menu
 - Much more
 
 ---
+## Mod developers/Permission 
+The only requirement is that you mention me in the credit and link the download/release page https://github.com/yushaer/GTA-SADE-Menu-System/releases/tag/cleo_menu_plugin of my menu plugin rather then bundle my menu plugin files with your mod file 
+
+---
 ## Credits 
 ### Seemann - For  [Cleo Redux](https://github.com/cleolibrary/CLEO-Redux)
 
